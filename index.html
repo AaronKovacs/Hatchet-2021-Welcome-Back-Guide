@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <link rel='stylesheet' id='wp-block-library-css' href='https://www.gwhatchet.com/wp-includes/css/dist/block-library/style.min.css?ver=5.2.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='hatchet-next-style-css' href='https://www.gwhatchet.com/wp-content/themes/hatchet-next/style.css?ver=1.0.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='jetpack_css-css' href='https://www.gwhatchet.com/wp-content/plugins/jetpack/css/jetpack.css?ver=7.8' type='text/css' media='all' />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/uni3xsx.css">
+
+
+
+    <script type="application/ld+json">
+    {"@context":"http:\/\/schema.org","@type":"WebSite","url":"https:\/\/www.gwhatchet.com","name":"The GW Hatchet"} </script>
+    <style type="text/css" id="wp-custom-css">  
+        @media only screen and (min-width: 650px) {
+            blockquote.right {
+                width: 40%;
+                margin-top: 0px;
+                margin-bottom: 10px;
+                margin-left: 30px;
+                margin-right: 0px;
+            }
+        }
+        
+        @media only screen and (max-width: 650px) {
+            blockquote.right {
+                margin-top: -10px;
+                margin-bottom: 10px;
+                margin-left: 15px;
+            }
+        }
+        
+        blockquote.right {
+            border-left: 4px solid #043c5b;
+            color: #043c5b;
+            font-family: Source Sans Pro, sans-serif;
+            font-weight: bold;
+            padding-left: 15px;
+            float: right;
+            font-style: italic;
+        }
+        
+        blockquote > p {
+            padding: 0;
+            margin: 0;
+        }
+        
+        @media only screen and (min-width: 650px) {
+            blockquote.left {
+                width: 40%;
+                margin-top: 5px;
+                margin-bottom: 10px;
+                margin-left: 15px;
+                margin-right: 30px;
+            }
+        }
+        
+        @media only screen and (max-width: 650px) {
+            blockquote.left {
+                margin-top: -5px;
+                margin-bottom: 15px;
+                margin-left: 15px;
+                margin-right: 30px;
+            }
+        }
+        
+        blockquote.left {
+            border-left: 4px solid #043c5b;
+            color: #043c5b;
+            font-family: Source Sans Pro, sans-serif;
+            font-weight: bold;
+            padding-left: 15px;
+            float: left;
+            font-style: italic;
+        }
+        
+        blockquote > p {
+            padding: 0;
+            margin: 0;
+        }
+        
+        aside {
+            background-color: rgb(227, 227, 227);
+            top: 0px;
+            float: right;
+            padding: 10px 15px 0px 15px;
+            width: 100%;
+            margin: 0px 0px 15px 0px;
+            color: #043c5b;
+            font-family: Source Serif Pro, Georgia, Cambria, Times New Roman, serif;
+            border-top: 4px solid #043c5b;
+            font-size: 20px;
+            line-height: 1em;
+            font-weight: bold;
+        }
+        
+        .related:before {
+            content: "Related: ";
+            color: rgb(99, 113, 122);
+            font-family: Source Serif Pro, Georgia, Cambria, Times New Roman, serif;
+        }
+        
+        .aside {
+            font-family: sans-serif;
+            font-size: 16px;
+            color: rgb(99, 113, 122);
+            line-height: 1.2em;
+            font-weight: 100;
+        }
+        
+        .aside2 {
+            font-family: Source Serif Pro, Georgia, Cambria, Times New Roman, serif;
+            font-size: 16px;
+            color: #043c5b;
+            font-weight: 100;
+        }
+        
+        aside > p {
+            margin: 0px 0px 10px 0px;
+        }
+
+        html {
+            margin-top: 0px !important;
+        }
+    </style>
+</head>
+<canvas class="wrapper" id="canvas"></canvas>
+
+<body class="post-template post-template-page-blank-slate post-template-page-blank-slate-php single single-post postid-1070915 single-format-standard">
+
+    <div class="blank-slate-container">
+        <style>
+            @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
+            .basketball-guide-2017-container {
+                max-width: 1100px;
+                text-align: left;
+                font-family: "Source Serif Pro", "Cambria", "Georgia", serif;
+                margin: 1rem auto
+            }
+            
+            .basketball-guide-2017-container * {
+                box-sizing: border-box
+            }
+            
+            .basketball-guide-2017-container a:link {
+                text-decoration: none
+            }
+            
+            .basketball-guide-2017-container h1 {
+                font-size: 2rem;
+                font-family: "Source Sans Pro", "Segoe UI", "Helvetica Neue", "Helvetica", sans-serif;
+                text-transform: uppercase;
+                background-color: #0F703C;
+                color: white;
+                padding: 0.5rem 0;
+                margin: 0.5rem 0
+            }
+
+
+            
+            .basketball-guide-2017-container header.guide-header img {
+                width: 100%;
+                max-height: 550px;
+                object-fit: cover;
+            }
+            
+            .basketball-guide-2017-container header.guide-header .cover-story {
+                max-width: 900px;
+                margin: 0 auto;
+                color: black
+            }
+            
+            .basketball-guide-2017-container header.guide-header .cover-story h2.big-headline {
+                font-size: 3rem;
+                margin: 0.75rem 0 0.75rem 0;
+                font-family: "Source Sans Pro", "Segoe UI", "Helvetica Neue", "Helvetica", sans-serif;
+                text-transform: uppercase;
+                line-height: 3rem;
+                color: #0F703C
+            }
+            
+            .basketball-guide-2017-container header.guide-header .cover-story p.big-subheadline {
+                font-size: 1.5rem;
+                margin: -0.25rem 0 1rem 0;
+                font-family: "Source Sans Pro", "Segoe UI", "Helvetica Neue", "Helvetica", sans-serif
+            }
+            
+            .basketball-guide-2017-container header.guide-header .cover-story p.big-excerpt {
+                margin-top: 0.5rem;
+                font-size: 1.1rem
+            }
+            
+            @media screen and (max-width: 500px) {
+                .basketball-guide-2017-container header.guide-header .cover-story h2.big-headline {
+                    font-size: 2rem;
+                    line-height: 2rem
+                }
+                .basketball-guide-2017-container header.guide-header .cover-story p.big-subheadline {
+                    font-size: 1.5rem
+                }
+                .basketball-guide-2017-container header.guide-header .cover-story p.big-excerpt,
+                .basketball-guide-2017-container header.guide-header .cover-story p.read-button span {
+                    font-size: 1rem
+                }
+            }
+            
+            .basketball-guide-2017-container header.guide-header:hover .cover-story h2.big-headline {
+                color: black
+            }
+            
+            .basketball-guide-2017-container section.guide-section {
+                margin-bottom: 0rem
+            }
+            
+            .basketball-guide-2017-container section.guide-section header h3 {
+                font-size: 2rem;
+                font-family: "Source Sans Pro", "Segoe UI", "Helvetica Neue", "Helvetica", sans-serif;
+                text-transform: uppercase;
+                /*background-color: #0F703C;*/
+                color: white;
+                padding: 0.5rem 0;
+                margin: 0.5rem 0
+            }
+            
+            .basketball-guide-2017-container section.guide-section section.row {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            
+            .basketball-guide-2017-container .story-box {
+                -webkit-box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.54);
+                -moz-box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.54);
+                box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.54);
+                flex-grow: 1;
+                height: 500px;
+                /*height: 600px;
+                /*height: 100%;*/
+                /*background-color: white;*/
+                display: block;
+                /*border: 5px solid #0F703C;*/
+                margin: 0.7rem 0.7rem;
+                margin-bottom: -1.0em;
+
+                overflow: hidden;
+                position: relative;
+                flex-shrink: 0;
+                flex-basis: 0;
+                min-width: 45%;
+                border-radius: 8px;
+                border: solid 2px white;
+            }
+            
+
+            
+            .basketball-guide-2017-container .story-box img {
+                width: 100%;
+                height: 252px;
+                /*background-color: white;*/
+                object-fit: cover;
+                object-position: center top
+            }
+            
+            .basketball-guide-2017-container .story-box div.blurb {
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                color: white
+            }
+            
+            .basketball-guide-2017-container .story-box div.blurb h4,
+            .basketball-guide-2017-container .story-box div.blurb p.description {
+                background-color: #0F703C;
+                padding: 0.25rem 0.5rem
+            }
+            
+            .basketball-guide-2017-container .story-box div.blurb h4 {
+                font-size: 1.5rem;
+                margin: 2rem 0;
+                text-align: right;
+                max-width: 75%;
+                position: absolute;
+                right: 0;
+                bottom: 0
+            }
+            
+            .basketball-guide-2017-container .story-box div.blurb p.description {
+                text-align: left;
+                display: none;
+                max-width: 75%
+            }
+            
+            .basketball-guide-2017-container p.read-button span {
+                background-color: #0F703C;
+                color: white;
+                text-transform: uppercase;
+                display: inline-block;
+                padding: 0.5rem 1rem;
+                font-family: "Source Sans Pro", "Segoe UI", "Helvetica Neue", "Helvetica", sans-serif;
+                font-weight: bold;
+                font-size: 1.25rem
+            }
+
+            
+            body.ios header {
+                display: none
+            }
+            
+            body.ios .basketball-guide-2017-container header {
+                display: block
+            }
+            
+            body.ios article.post {
+                padding-left: 0;
+                padding-right: 0
+            }
+            
+            html {
+                height: 100%;
+                overflow: hidden;
+            }
+
+            html {
+                background-color: #EDD8B7;
+            }
+            
+            body {
+                color: #EDD8B7;
+                margin: 0;
+                padding: 0;
+                -webkit-perspective: 1px;
+                perspective: 1px;
+                -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+                height: 100%;
+                overflow-y: scroll;
+                overflow-x: hidden;
+            }
+            
+            figure {
+                box-sizing: border-box;
+                min-height: 40vw;
+                padding: 30vw 0 5vw;
+                margin-left: -0.0em;
+                position: relative;
+                -webkit-transform-style: inherit;
+                transform-style: inherit;
+                width: 100vw;
+                background-blend-mode: darken;
+                transition: 3s;
+            }
+            
+            figure,
+            figure:before {
+                background: 50% 50% / cover;
+            }
+            
+            figure::before {
+                bottom: 0;
+                content: "";
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                display: block;
+                background-color: white;
+                /*./ArmellTransfer_OA-2000x1340.gif*/
+
+                /*https://www.gwhatchet.com/wp-content/uploads/2018/11/LandingPage_GS-2000x1340.jpg*/
+                background-image: url(https://www.gwhatchet.com/wp-content/uploads/2019/11/2019-fall-basketball-preview-image-1.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-origin: center;
+                background-clip: center;
+                background-attachment: fixed;
+                background-blend-mode: darken;
+
+                transition: 3s;
+                /*-webkit-transform-origin: center center 0;
+                -webkit-transform: translateZ(-1px) scale(2);
+                transform-origin: center center 0;
+                transform: translateZ(-1px) scale(2);*/
+                z-index: -1;
+                min-height: 50vh;
+            }
+
+
+            @media screen and (max-width: 600px) {
+                figure::before {
+                    background-attachment: scroll;
+                }
+            }
+
+            
+            figure * {
+                text-align: center;
+                margin: 0;
+                padding: 0.1em 0;
+                font-family: "Source Serif Pro", "Georgia", "Cambria", "Times New Roman", serif;
+            }
+            
+            figure h2 {
+                font-size: 3rem;
+                margin: 0.75rem 0 0.75rem 0;
+                font-family: "Source Sans Pro", "Segoe UI", "Helvetica Neue", "Helvetica", sans-serif;
+                text-transform: uppercase;
+                line-height: 3rem;
+                color: #0F703C;
+            }
+
+            figure .big-subheadline {
+                font-family: "Source Sans Pro", "Segoe UI", "Helvetica Neue", "Helvetica", sans-serif;
+            }
+            
+            main {
+                background-color: hsl(60, 10%, 10%);
+                line-height: 1.7;
+                max-width: 32em;
+                padding: 5% calc(50% - 16em) 35%;
+                position: relative;
+                z-index: 2;
+            }
+
+
+
+            .basketball-guide-2017-container:hover .read-container {
+                background-color: black;
+            }
+
+            .basketball-guide-2019-story-title {
+                font-size: 24pt;
+                font-weight: 600;
+                /*margin: 1rem 0 0.0rem 0;*/
+                width: 100%;
+                margin-top: auto;
+                margin-bottom: auto;
+                text-transform: none;
+                line-height: 1.2;
+                color: white;
+                /*margin-left: 1em;
+                margin-right: 1em;*/
+                font-family: "Roboto", sans-serif;
+
+
+            }
+
+
+
+            .basketball-guide-2019-story-excerpt {
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 14pt; 
+                line-height: 1.15; 
+                /*margin-left: 2em; 
+                margin-right: 2em;*/
+                width: 100%;
+                /*margin-bottom: auto;*/
+                margin-top: auto;
+                font-family: "Rockwell", "Source Serif Pro", "Segoe UI", "Helvetica Neue", "Helvetica", sans-serif;
+
+
+            }
+
+            .basketball-guide-2019-story-author {
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 12pt; 
+                line-height: 1.15; 
+                margin-left: 2em; 
+                margin-right: 2em; 
+                margin-bottom: auto;
+                font-family: "Source Sans Pro", "Segoe UI", "Helvetica Neue", "Helvetica", sans-serif;
+
+            }
+
+            @media screen and (max-width: 600px) {
+                .basketball-guide-2019-story-title {
+                    font-size: 22pt;
+                    margin-left: 0.25em; 
+                    margin-right: 0.25em; 
+                }
+
+                .basketball-guide-2019-story-excerpt {
+                    font-size: 10pt; 
+                    margin-left: 0.25em; 
+                    margin-right: 0.25em; 
+                }
+
+                .basketball-guide-2019-story-author {
+                    font-size: 10pt; 
+                    margin-left: 1em; 
+                    margin-right: 1em; 
+                }
+            }
+
+            @media screen and (max-width: 350px) {
+                .basketball-guide-2019-story-title {
+                    font-size: 18pt;
+                    margin-left: 0.25em; 
+                    margin-right: 0.25em; 
+                }
+
+                .basketball-guide-2019-story-excerpt {
+                    font-size: 10pt; 
+                    margin-left: 0.25em; 
+                    margin-right: 0.25em; 
+                }
+
+                .basketball-guide-2019-story-author {
+                    font-size: 10pt; 
+                    margin-left: 1em; 
+                    margin-right: 1em; 
+                }
+            }
+
+            .basketball-guide-2019-button-subtitle {
+                font-family: "Source Sans Pro", "Segoe UI", "Helvetica Neue", "Helvetica", sans-serif;
+                font-size: 12pt; 
+                color: white;
+                opacity: 0.7; 
+                margin-top: 0;
+                font-weight: 700;
+            }
+
+            .read-button {
+                transition: .5s ease;
+            }
+
+            .hover-button {
+                transition: .5s ease;
+                width: calc(50% - 1.0rem);
+            }
+
+            .hover-button:hover {
+                opacity: 0.8;
+            }
+
+            .hover-button { cursor: pointer; }
+
+
+            a { cursor: pointer; }
+
+
+            .read-background {
+                transition: .5s ease;
+                width: 55%;
+            }
+
+            .read-background:hover {
+                background-color: black;
+            }
+
+            .backgroundBox {
+                transition: .5s ease;
+                /* padding-top: 1em; */
+                justify-content: space-between;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding-left: 1rem;
+                padding-right: 1rem;
+
+                /* padding-bottom: 1rem; */
+            }
+        }
+
+        .story-box:hover div {
+            opacity: 0.8;
+        }
+
+        .basketball-guide-2017-container {
+            padding-bottom: 2em;
+        }
+
+        .disappearing-box {
+            display: block;
+        }
+
+        .centered-post {
+            max-width: 48.5%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media screen and (max-width: 600px) {
+            .centered-post {
+                max-width: 100%;
+            }
+
+            .hover-button {
+                width: calc(100% - 1.0rem);
+                margin-bottom: 0.25rem;
+                margin-top: 0.25rem;
+            }
+
+            .read-background {
+                width: 100%;
+            }
+
+            .basketball-guide-2017-container {
+                padding-bottom: 0em;
+            }
+
+            .disappearing-box {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 350px) {
+            .big-headline {
+                font-size: 2.5rem;
+            }
+        }
+
+        .read-button:hover .read-background {
+            opacity: 0.8;
+        }
+
+
+        .header-title {
+            color: white;
+            padding: 0.5rem 0;
+            margin: 0; 
+            font-size: 40pt;
+            font-weight: bold; 
+            font-family: trade-gothic-next, sans-serif; 
+            margin-top: -0.4em;
+        }
+
+        .header-subtitle {
+            color: white;
+            padding: 0.5rem 0;
+            padding-top: 0.9em;
+            margin: 0; 
+            font-size: 20pt;
+            font-weight: bold; 
+            font-family: trade-gothic-next, sans-serif; 
+        }
+
+
+
+        .threeboxgallery {
+           width: 50%;
+       }
+
+       @media screen and (max-width: 900px) {
+        .threeboxgallery {
+            width: 100%;
+        }
+    }
+
+    .basketball-guide-2017-container .story-box {
+        min-width: calc(100% - 1.4rem);
+    }
+
+    .basketball-guide-2017-container .story-box {
+        height: 650px;
+    }
+
+    .basketball-guide-2017-container .story-box img {
+        height: 400px;
+    }
+
+    @media screen and (min-width: 900px) {
+       .basketball-guide-2017-container .story-box {
+        min-width: 45%;
+    }
+}
+
+.basketball-guide-2017-container .story-box img {
+    height: 300px;
+}
+
+.basketball-guide-2017-container .story-box {
+    height: 500px;
+}
+
+
+.tallBox {
+    width: 100%;
+    height: 60%;
+}
+
+.header-title-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    width: 50%;
+    background-color: white;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align: center;
+    box-shadow: 10px 10px 0px #0F703C;
+}
+
+
+.header-subtitle-text {
+    color: #000;
+    font-size: 20pt;
+    font-weight: 1000;
+    margin-top: 0.5em;
+}
+
+.header-title-text {
+    color: #000;
+    font-size: 45pt;
+    font-family: grafolita-script, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+.header-paragraph {
+    font-family: "Source Sans Pro", "Segoe UI", "Helvetica Neue", "Helvetica", sans-serif;
+    font-size: 16pt; 
+    margin-top: 0.5em;
+    color: black;
+}
+
+.section-header-title {
+    color: #FFF; 
+    font-size: 25pt; 
+    text-transform: none; 
+    text-align: center;
+    margin-top: 2em;
+
+    box-shadow: 10px 10px 0px #92C99D;
+    background-color: #0F703C;
+    padding: 1em;
+    font-family: "Source Sans Pro", "Segoe UI", "Helvetica Neue", "Helvetica", sans-serif;
+
+}
+
+.guide-section-first {
+    margin-top: calc(100vh + 6em);
+}
+
+.guide-header-image-container {
+    width: 100%; 
+    height: 700px;
+}
+
+.guide-header-image {
+    width: auto;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    .header-title-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .guide-header-image {
+        width: 100%;
+        height: auto;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .guide-header-image-container {
+        width: 100%; 
+        height: calc(100vw * 0.6495);
+    }
+
+    .header-title-container {
+        width: calc(100% - 2em);
+    }
+
+    .header-subtitle-text {
+        font-size: 15pt;
+    }
+
+    .header-title-text {
+        font-size: 30pt;
+    }
+
+    .header-paragraph {
+        font: 12pt;
+    }
+
+    .section-header-title {
+        font-size: 15pt;
+    }
+
+    .guide-section-first {
+        margin-top: calc(400px + 7em);
+    }
+}
+
+.story-box {
+    transition: all .2s ease-in-out;
+    background-color: #274006;
+}
+
+.story-box:hover {
+    transform: scale(1.05);
+}
+
+.card-box {
+    background-color: #274006;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+}
+
+@font-face {
+    font-family: 'OldSport';
+    src: url('https://aaronkovacs.github.io/Hatchet-2019-Halloween-Landing-Page/FEASFBRG.TTF')  format('truetype');
+}
+
+
+.card-story-title {
+    color: #FFF;
+    font-size: 16pt;
+}
+
+.card-story-subtitle {
+    font-size: 12pt;
+    font-weight: 100;
+    margin-top: 0.5em;
+    color: #FFF;This appears in the August 24, 2020 issue...
+}
+<p class="issue-link">This article appeared in the <a href="https://www.gwhatchet.com/issue/2020-08-24/"> August 24, 2020 issue</a> of the Hatchet.</p>
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  min-height: 100vh;
+  z-index: -1;
+  margin-top: calc(100vh);
+}
+
+footer .social-links {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+footer p.copyright {
+    border-top: 1px solid #000;
+    color: #000;
+}
+
+footer .footer-widgets ul.widgets li.widget_nav_menu li a {
+    color: #000;
+}
+
+.issue-link {
+    color: black;
+    margin-left: 37%;
+}
+
+
+
+.issue-link a {
+    color: black;
+}
+
+</style>
+
+
+
+
+<div class="guide-container basketball-guide-2017-container" style="margin-top: 4em;">
+
+
+    <div class="guide-container basketball-guide-2017-container" style="text-align: center; background-color: #BA3F89;
+; width: fit-content; padding: 0.5em; padding-left: 2em; padding-right: 2em;border-radius: 8px; border: solid 2px white;">
+    <p class="header-subtitle" style="opacity: 0.8;">The GW Hatchet&apos;s 2021</p>
+    <p class="header-title">Welcome Back Guide</p>
+    </div>
+
+
+    <section style=" margin-bottom: 1em;" class="guide-section">
+        <section class="row">
+            <a class="story-box" style="height: auto;margin-top: 2em;" href="https://www.gwhatchet.com/?p=1124243&preview=true">
+                <img src="https://www.gwhatchet.com/wp-content/uploads/2020/08/GW_Engage_CD_082120-1500x1000.jpg">
+                <div class="backgroundBox card-box">
+                    <h4 class="basketball-guide-2019-story-title card-story-title">Tips for making college friends from home</h4>
+                    <p class="basketball-guide-2019-story-title card-story-subtitle">Take out your phone or open your laptop to follow these suggestions for making friends in your first semester at GW.</p>
+                </div>
+            </a>
+            <a class="story-box" style="height: auto;margin-top: 2em;" href="https://www.gwhatchet.com/?p=1124256&preview=true">
+                <img src="https://www.gwhatchet.com/wp-content/uploads/2020/08/thumbnail-orientation-1024x576-1.jpg">
+                <div class="backgroundBox card-box">
+                    <h4 class="basketball-guide-2019-story-title card-story-title">Tips for freshmen from STAR leaders</h4>
+                    <h5 class="basketball-guide-2019-story-title card-story-subtitle">STAR leaders said you can still make the most out of your time from home by staying engaged and prioritizing yourself.</h5>
+                </div>
+            </a>
+            <a class="story-box" style="height: auto;margin-top: 2em;" href="https://www.gwhatchet.com/?p=1124211&preview=true">
+                <img src="https://www.gwhatchet.com/wp-content/uploads/2020/08/GWPD_LB-1024x683-3.jpg">
+                <div class="backgroundBox card-box">
+                    <h4 class="basketball-guide-2019-story-title card-story-title">Get up to speed on student activism from the summer, academic year</h4>
+                    <h5 class="basketball-guide-2019-story-title card-story-subtitle">From a pass/fail grading scale to dropping the Colonials moniker, here are the top issues students have been advocating for before you got to GW.</h5>
+                </div>
+            </a>
+            
+            <a class="story-box" style="height: auto;margin-top: 2em;" href="https://www.gwhatchet.com/?p=1124328&preview=true">
+                <img src="https://www.gwhatchet.com/wp-content/uploads/2020/08/Crepeaway_LB_082120-1500x1000.jpg">
+                <div class="backgroundBox card-box">
+                    <h4 class="basketball-guide-2019-story-title card-story-title">D.C. bucket list: What to look forward to once you’re in town</h4>
+                    <h5 class="basketball-guide-2019-story-title card-story-subtitle">You might not get a full campus feel this fall, but there's a laundry list of places to look forward to visiting once you're living in the District.</h5>
+                </div>
+            </a>
+
+            <a class="story-box" style="height: auto;margin-top: 2em;" href="https://www.gwhatchet.com/?p=1124216&preview=true">
+                <img src="https://www.gwhatchet.com/wp-content/uploads/2020/08/CHC_AB-1024x683-1.jpg">
+                <div class="backgroundBox card-box">
+                    <h4 class="basketball-guide-2019-story-title card-story-title">Resources to take care of your mental health in your first year</h4>
+                    <p class="basketball-guide-2019-story-title card-story-subtitle">Despite the distance, GW is still offering several virtual mental health resources to ensure you prioritize yourself through the pandemic.</p>
+                </div>
+            </a>
+            <a class="story-box" style="height: auto;margin-top: 2em;" href="https://www.gwhatchet.com/?p=1124248&preview=true">
+                <img src="https://www.gwhatchet.com/wp-content/uploads/2020/08/ClassroomTech_DA-1024x683-1.jpg">
+                <div class="backgroundBox card-box">
+                    <h4 class="basketball-guide-2019-story-title card-story-title">How to succeed in online classes</h4>
+                    <h5 class="basketball-guide-2019-story-title card-story-subtitle">Take some time to connect with professors, practice a self-care routine and stay in touch with classmates to alleviate some worries.</h5>
+                </div>
+            </a>
+            <a class="story-box" style="height: auto;margin-top: 2em;" href="https://www.gwhatchet.com/?p=1124260&preview=true">
+                <img src="https://www.gwhatchet.com/wp-content/uploads/2020/08/GW_tweets_LB_082120-1500x1000.jpg">
+                <div class="backgroundBox card-box">
+                    <h4 class="basketball-guide-2019-story-title card-story-title">Social media orientation: Accounts to follow for news, updates and connections</h4>
+                    <h5 class="basketball-guide-2019-story-title card-story-subtitle">As we navigate classes from all parts of the globe, social media is a sure-fire way to connect with administrators, students and faculty.</h5>
+                </div>
+            </a>
+            <a class="story-box" style="height: auto;margin-top: 2em;" href="https://www.gwhatchet.com/?p=1124214&preview=true">
+                <img src="https://www.gwhatchet.com/wp-content/uploads/2020/08/Class_of_24_CD_082120-1500x1000.jpg">
+                <div class="backgroundBox card-box">
+                    <h4 class="basketball-guide-2019-story-title card-story-title">How to stay engaged with student activities from a distance</h4>
+                    <h5 class="basketball-guide-2019-story-title card-story-subtitle">The move online has paused all physical student activities, but you'd be surprised at the number of groups that are staying strong with a virtual presence.</h5>
+                </div>
+            </a>
+        </section>
+    </section>    
+
+</section>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
